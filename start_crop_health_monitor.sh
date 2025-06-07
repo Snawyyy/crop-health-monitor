@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # ==============================================================================
-# PLEASE VERIFY THESE PATHS ARE CORRECT FOR YOUR CURRENT SETUP!
-# Ensure they point to where your actual project files and data are located
-# and where your user ('snawy') has appropriate read/write permissions.
+# SCRIPT CONFIGURATION
+# This script assumes it is located in your project's root directory.
 # ==============================================================================
-FASTAPI_BACKEND_DIR="/media/snawy/ProjectData/Gis/Projects/crop-health-monitor/backend/" # Assumed path, please verify!
-REACT_FRONTEND_DIR="/media/snawy/ProjectData/Gis/Projects/crop-health-monitor/frontend/"
-TITILER_COG_DATA_DIR="/media/snawy/ProjectData/Gis/Projects/crop-health-monitor/data/"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+FASTAPI_BACKEND_DIR="${SCRIPT_DIR}/backend"
+REACT_FRONTEND_DIR="${SCRIPT_DIR}/frontend"
+TITILER_COG_DATA_DIR="${SCRIPT_DIR}/data"
 # ==============================================================================
 
 TITILER_CONTAINER_NAME="titiler_server"
@@ -33,6 +34,7 @@ start_titiler() {
             echo "ERROR: Cannot start new Titiler container."
             return 1 # Indicate failure
         fi
+        # Docker requires absolute paths for volume mounts, which SCRIPT_DIR provides.
         docker run -d --name $TITILER_CONTAINER_NAME -p 8001:80 \
                    -v "$TITILER_COG_DATA_DIR":/data \
                    ghcr.io/developmentseed/titiler:latest
@@ -78,12 +80,11 @@ start_react_frontend() {
         return 1
     fi
 
-    # No need to escape single quotes if using "$VAR" properly
     "$TERMINAL_APP" --tab --title="React Frontend" \
                    --working-directory="$REACT_FRONTEND_DIR" \
                    --command="bash -c \"echo '--- React Frontend Terminal (Port 5173 or similar) ---'; \
-                                         echo 'Running yarn Dev...'; \
-                                         sudo yarn dev; \
+                                         echo 'Running yarn dev...'; \
+                                         yarn dev; \
                                          echo 'React Dev Server exited. Press Ctrl+D or type exit to close.'; \
                                          exec bash\"" &
     return 0
