@@ -1,0 +1,117 @@
+/* Enhanced Layer Control Panel */
+.LayerControlPanel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 230px;
+  height: calc(90% - 10px);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: burlywood;
+  padding: 15px;
+  border: 2px solid burlywood;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  overflow-y: auto;
+}
+
+.LayerControlPanel h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(222, 184, 135, 0.8);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.CheckboxPanel {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.CheckboxPanel:hover {
+  background-color: rgba(222, 184, 135, 0.1);
+}
+
+.LayerControlPanel input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  accent-color: burlywood;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.LayerControlPanel input[type="checkbox"]:hover {
+  transform: scale(1.1);
+}
+
+.LayerControlPanel label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.LayerControlPanel hr {
+  height: 1px;
+  border: none;
+  background-color: burlywood;
+  margin: 15px 0;
+  opacity: 0.8;
+}
+
+/* Section styling */
+.ControlSection {
+  margin-bottom: 20px;
+}
+
+.ControlSection h4 {
+  margin-bottom: 10px;
+  color: burlywood;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Form controls */
+.LayerControlPanel input[type="text"],
+.LayerControlPanel input[type="number"],
+.LayerControlPanel select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid rgba(222, 184, 135, 0.6);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.LayerControlPanel select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23deb887%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px;
+}
+
+.LayerControlPanel input[type="text"]:focus,
+.LayerControlPanel input[type="number"]:focus,
+.LayerControlPanel select:focus {
+  outline: none;
+  border-color: burlywood;
+  box-shadow: 0 0 0 2px rgba(222, 184, 135, 0.3);
+}
+
+.LayerControlPanel input[type="text"]:hover,
+.LayerControlPanel input[type="number"]:hover,
+.LayerControlPanel select:hover {
+  border-color: burlywood;
+}

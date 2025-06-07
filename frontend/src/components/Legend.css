@@ -1,0 +1,95 @@
+.legend-container {
+  position: absolute;
+  bottom: 70px;
+  left: 15px;
+  width: 230px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: burlywood;
+  padding: 15px;
+  border: 2px solid burlywood;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  max-width: none;
+}
+
+.leaflet-legend h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(222, 184, 135, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.legend-item:hover {
+  background-color: rgba(222, 184, 135, 0.1);
+}
+
+.legend-item i {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid rgba(222, 184, 135, 0.6);
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.legend-item:hover i {
+  border-color: burlywood;
+  transform: scale(1.05);
+}
+
+.legend-item span {
+  font-size: 12px;
+  flex-grow: 1;
+  user-select: none;
+  color: burlywood;
+}
+
+.legend-loading, 
+.legend-error, 
+.legend-no-data {
+  font-size: 12px;
+  font-style: italic;
+  color: rgba(222, 184, 135, 0.7);
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgba(222, 184, 135, 0.05);
+}
+
+.legend-section {
+  margin-bottom: 20px;
+}
+
+.legend-section h5 {
+  margin-bottom: 10px;
+  color: burlywood;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(222, 184, 135, 0.3);
+  padding-bottom: 5px;
+}
+
+.legend-container hr {
+  height: 1px;
+  border: none;
+  background-color: burlywood;
+  margin: 15px 0;
+  opacity: 0.8;
+}

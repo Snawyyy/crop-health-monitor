@@ -1,0 +1,568 @@
+/* Base styles */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* Enhanced Header */
+.Header {
+  height: 64px;
+  width: 100%;
+  background-color: #111;
+  box-sizing: border-box;
+  text-align: left;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(222, 184, 135, 0.3);
+}
+
+.Logo {
+  height: 80%;
+  width: auto;
+  padding-right: 15px;
+  transition: transform 0.2s ease;
+}
+
+.Logo:hover {
+  transform: scale(1.05);
+}
+
+.Header h2 {
+  color: burlywood;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Main content area */
+.MainContent {
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Map controls */
+.leaflet-control-zoom {
+  border: 1px solid rgba(222, 184, 135, 0.6) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: burlywood !important;
+  transition: all 0.2s ease;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: rgba(222, 184, 135, 0.2) !important;
+}
+
+/* Attribution styling */
+.leaflet-control-attribution {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: burlywood !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+}
+
+.leaflet-control-attribution a {
+  color: burlywood !important;
+}
+
+/* Custom Scale Bar Component with Segments */
+.custom-scale-bar-container {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: burlywood;
+  padding: 10px 16px;
+  border: 2px solid burlywood;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  font-family: inherit;
+  z-index: 1000;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.custom-scale-bar-container:hover {
+  border-color: rgba(222, 184, 135, 0.8);
+  transform: translateY(-1px);
+}
+
+/* Segments container */
+.custom-scale-segments-container {
+  display: flex;
+  height: 6px;
+  border: 2px solid burlywood;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  max-width: 200px; /* Constrain maximum width */
+}
+
+.custom-scale-bar-container:hover .custom-scale-segments-container {
+  border-color: rgba(222, 184, 135, 0.9);
+}
+
+/* Individual segments */
+.custom-scale-segment {
+  height: 100%;
+  border-right: 1px solid burlywood;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.custom-scale-segment:last-child {
+  border-right: none; /* Remove border from last segment */
+}
+
+/* Alternating segment colors */
+.segment-even {
+  background-color: burlywood;
+}
+
+.segment-odd {
+  background-color: rgba(222, 184, 135, 0.3);
+}
+
+.custom-scale-bar-container:hover .segment-even {
+  background-color: rgba(222, 184, 135, 0.9);
+}
+
+.custom-scale-bar-container:hover .segment-odd {
+  background-color: rgba(222, 184, 135, 0.5);
+}
+
+/* Tick marks on top of segments */
+.custom-scale-segment::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -1px;
+  width: 2px;
+  height: 8px;
+  background-color: burlywood;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.custom-scale-segment:last-child::before {
+  display: none; /* Hide tick mark on last segment */
+}
+
+.custom-scale-bar-container:hover .custom-scale-segment::before {
+  background-color: rgba(222, 184, 135, 0.9);
+}
+
+/* Labels container */
+.custom-scale-labels-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 200px; /* Match segments container */
+}
+
+.custom-scale-labels-container span {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  color: burlywood;
+  user-select: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.custom-scale-labels-container span:first-child {
+  margin-left: -2px; /* Align with left edge */
+}
+
+.custom-scale-labels-container span:last-child {
+  margin-right: -2px; /* Align with right edge */
+}
+
+.custom-scale-bar-container:hover .custom-scale-labels-container span {
+  color: rgba(222, 184, 135, 0.9);
+}
+
+/* Alternative positioning options */
+.custom-scale-bar-container.top-left {
+  top: 15px;
+  left: 15px;
+  bottom: auto;
+}
+
+.custom-scale-bar-container.top-right {
+  top: 15px;
+  right: 15px;
+  left: auto;
+  bottom: auto;
+}
+
+.custom-scale-bar-container.bottom-right {
+  bottom: 15px;
+  right: 15px;
+  left: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-scale-bar-container {
+    padding: 8px 12px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    max-width: 180px;
+  }
+  
+  .custom-scale-segments-container {
+    height: 5px;
+    max-width: 150px;
+  }
+  
+  .custom-scale-labels-container {
+    max-width: 150px;
+  }
+  
+  .custom-scale-labels-container span {
+    font-size: 9px;
+  }
+  
+  .custom-scale-segment::before {
+    height: 6px;
+    top: -6px;
+  }
+}
+
+/* Loading state */
+.custom-scale-bar-container.loading {
+  opacity: 0.6;
+}
+
+.custom-scale-bar-container.loading .custom-scale-segments-container {
+  animation: scale-loading 1.5s ease-in-out infinite;
+}
+
+@keyframes scale-loading {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* Histogram Display Panel */
+.histogram-panel {
+  position: absolute;
+  top: 15px;
+  left: 50px; /* Position to the right of layer control panel */
+  width: 280px;
+  max-height: calc(90% - 30px);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: burlywood;
+  padding: 15px;
+  border: 2px solid burlywood;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  overflow-y: auto;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.histogram-panel:hover {
+  border-color: rgba(222, 184, 135, 0.8);
+  transform: translateY(-1px);
+}
+
+.histogram-panel h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(222, 184, 135, 0.8);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  color: burlywood;
+}
+
+.histogram-panel p {
+  margin: 8px 0 12px 0;
+  font-size: 12px;
+  color: rgba(222, 184, 135, 0.8);
+  line-height: 1.4;
+}
+
+/* Recharts container styling */
+.histogram-panel .recharts-wrapper {
+  background-color: rgba(30, 30, 30, 0.9);
+  border: 1px solid rgba(222, 184, 135, 0.4);
+  border-radius: 4px;
+  margin: 12px 0;
+  padding: 5px;
+  transition: all 0.2s ease;
+}
+
+.histogram-panel .recharts-wrapper:hover {
+  border-color: rgba(222, 184, 135, 0.6);
+  background-color: rgba(40, 40, 40, 0.9);
+}
+
+/* Chart styling - Override Recharts defaults */
+.histogram-panel .recharts-cartesian-grid-horizontal line {
+  stroke: rgba(222, 184, 135, 0.2) !important;
+}
+
+.histogram-panel .recharts-cartesian-grid-vertical line {
+  stroke: rgba(222, 184, 135, 0.1) !important;
+}
+
+/* Axis styling */
+.histogram-panel .recharts-xAxis .recharts-cartesian-axis-tick-value,
+.histogram-panel .recharts-yAxis .recharts-cartesian-axis-tick-value {
+  fill: burlywood !important;
+  font-size: 9px !important;
+  font-family: inherit !important;
+}
+
+.histogram-panel .recharts-xAxis .recharts-cartesian-axis-line,
+.histogram-panel .recharts-yAxis .recharts-cartesian-axis-line {
+  stroke: rgba(222, 184, 135, 0.6) !important;
+}
+
+.histogram-panel .recharts-xAxis .recharts-cartesian-axis-tick-line,
+.histogram-panel .recharts-yAxis .recharts-cartesian-axis-tick-line {
+  stroke: rgba(222, 184, 135, 0.4) !important;
+}
+
+/* Y-axis label styling */
+.histogram-panel .recharts-label {
+  fill: burlywood !important;
+  font-size: 10px !important;
+  font-family: inherit !important;
+}
+
+/* Bar styling */
+.histogram-panel .recharts-bar-rectangle {
+  fill: burlywood !important;
+  transition: all 0.2s ease !important;
+}
+
+.histogram-panel .recharts-bar-rectangle:hover {
+  fill: rgba(222, 184, 135, 0.8) !important;
+  stroke: rgba(222, 184, 135, 1) !important;
+  stroke-width: 1 !important;
+}
+
+/* Tooltip styling */
+.histogram-panel .recharts-tooltip-wrapper {
+  z-index: 1001 !important;
+}
+
+.histogram-panel .recharts-default-tooltip {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border: 1px solid burlywood !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(3px) !important;
+  color: burlywood !important;
+  font-size: 11px !important;
+  padding: 8px !important;
+}
+
+.histogram-panel .recharts-tooltip-label {
+  color: burlywood !important;
+  font-weight: bold !important;
+  margin-bottom: 4px !important;
+  border-bottom: 1px solid rgba(222, 184, 135, 0.3) !important;
+  padding-bottom: 2px !important;
+}
+
+.histogram-panel .recharts-tooltip-item {
+  color: rgba(222, 184, 135, 0.9) !important;
+}
+
+.histogram-panel .recharts-tooltip-item-name {
+  color: rgba(222, 184, 135, 0.7) !important;
+}
+
+/* Responsive chart adjustments */
+@media (max-width: 768px) {
+  .histogram-panel .recharts-wrapper {
+    margin: 8px 0;
+    padding: 3px;
+  }
+  
+  .histogram-panel .recharts-xAxis .recharts-cartesian-axis-tick-value,
+  .histogram-panel .recharts-yAxis .recharts-cartesian-axis-tick-value {
+    font-size: 8px !important;
+  }
+  
+  .histogram-panel .recharts-label {
+    font-size: 9px !important;
+  }
+  
+  .histogram-panel .recharts-default-tooltip {
+    font-size: 10px !important;
+    padding: 6px !important;
+  }
+}
+
+/* Debug info styling */
+.histogram-panel pre {
+  background-color: rgba(30, 30, 30, 0.8) !important;
+  border: 1px solid rgba(222, 184, 135, 0.3) !important;
+  border-radius: 4px !important;
+  padding: 8px !important;
+  color: rgba(222, 184, 135, 0.7) !important;
+  font-family: 'Courier New', monospace !important;
+  font-size: 9px !important;
+  line-height: 1.3 !important;
+  max-height: 80px !important;
+  overflow-y: auto !important;
+  margin: 10px 0 0 0 !important;
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+}
+
+.histogram-panel pre::-webkit-scrollbar {
+  width: 6px;
+}
+
+.histogram-panel pre::-webkit-scrollbar-track {
+  background: rgba(222, 184, 135, 0.1);
+  border-radius: 3px;
+}
+
+.histogram-panel pre::-webkit-scrollbar-thumb {
+  background: rgba(222, 184, 135, 0.4);
+  border-radius: 3px;
+}
+
+.histogram-panel pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(222, 184, 135, 0.6);
+}
+
+/* Loading state */
+.histogram-panel:has-text("Loading histogram...") {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  font-style: italic;
+  color: rgba(222, 184, 135, 0.7);
+}
+
+/* Error state */
+.histogram-panel:has-text("Error:") {
+  border-color: rgba(220, 20, 60, 0.8);
+  background-color: rgba(139, 0, 0, 0.1);
+}
+
+.histogram-panel:has-text("Error:"):hover {
+  border-color: rgba(220, 20, 60, 1);
+}
+
+/* No data state */
+.histogram-panel:has-text("No histogram data") {
+  color: rgba(222, 184, 135, 0.6);
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Alternative positioning options */
+.histogram-panel.bottom-left {
+  top: auto;
+  bottom: 15px;
+  left: 15px;
+}
+
+.histogram-panel.bottom-right {
+  top: auto;
+  bottom: 15px;
+  left: auto;
+  right: 15px;
+}
+
+.histogram-panel.top-right {
+  left: auto;
+  right: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .histogram-panel {
+    left: 15px;
+    top: 280px; /* Stack below layer control on smaller screens */
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .histogram-panel {
+    width: calc(100vw - 60px);
+    max-width: 300px;
+    left: 15px;
+    top: auto;
+    bottom: 100px;
+    max-height: 200px;
+  }
+  
+  .histogram-panel h4 {
+    font-size: 14px;
+  }
+  
+  .histogram-panel p {
+    font-size: 11px;
+  }
+  
+  .histogram-panel pre {
+    font-size: 8px !important;
+    max-height: 60px !important;
+  }
+}
+
+/* Custom scrollbar for the entire panel */
+.histogram-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.histogram-panel::-webkit-scrollbar-track {
+  background: rgba(222, 184, 135, 0.1);
+  border-radius: 4px;
+}
+
+.histogram-panel::-webkit-scrollbar-thumb {
+  background: rgba(222, 184, 135, 0.4);
+  border-radius: 4px;
+}
+
+.histogram-panel::-webkit-scrollbar-thumb:hover {
+  background: rgba(222, 184, 135, 0.6);
+}

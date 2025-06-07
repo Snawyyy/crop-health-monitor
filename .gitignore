@@ -1,0 +1,20 @@
+# Python backend
+backend/venv/
+__pycache__/
+*.pyc
+
+# Node frontend (if you use it)
+frontend/node_modules/
+
+# IDE/Editor folders
+.vscode/
+.idea/
+
+# Secret files
+.env
+*.env
+secrets.ini
+
+# OS files
+.DS_Store
+Thumbs.db
