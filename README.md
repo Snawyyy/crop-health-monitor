@@ -4,7 +4,7 @@ A full-stack web application for processing and visualizing satellite imagery wi
 
 The dashboard provides an interactive mapping interface for analyzing Cloud Optimized GeoTIFF (COG) data derived from Sentinel-2 satellite imagery.
 
-![Dashboard Screenshot](dashboard_screenshot.jpg)
+![Dashboard Screenshot](dashboard_screenshot.png)
 
 ## Features
 
