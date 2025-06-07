@@ -1,4 +1,8 @@
 # Crop Health Monitor Dashboard
+[![CI](https://github.com/Snawyyy/crop-health-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/Snawyyy/crop-health-monitor/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/Snawyyy/crop-health-monitor/branch/main/graph/badge.svg)](https://codecov.io/gh/Snawyyy/crop-health-monitor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/Snawyyy/crop-health-monitor.svg)](https://github.com/Snawyyy/crop-health-monitor/commits/main)
 
 A full-stack web application for processing and visualizing satellite imagery with a focus on NDVI (Normalized Difference Vegetation Index) analysis for agricultural health assessment. This project demonstrates proficiency in geospatial data engineering, backend development, and modern frontend technologies.
 
