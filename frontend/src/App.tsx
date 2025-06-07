@@ -33,7 +33,7 @@
       fetchApiInfo();
     }, []);
 
-    const cogInitialCenter: LatLngExpression = [39.95, -104.95];
+    const cogInitialCenter: LatLngExpression = [31.8, 34.65];
     const initialZoom: number = 12;
 
     const [isCogLayerVisible, setIsCogLayerVisible] = useState<boolean>(true);
