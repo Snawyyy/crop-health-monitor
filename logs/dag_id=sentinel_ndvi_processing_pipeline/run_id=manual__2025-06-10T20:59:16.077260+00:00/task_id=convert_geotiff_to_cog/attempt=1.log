@@ -1,0 +1,28 @@
+[2025-06-10T21:01:55.328+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.convert_geotiff_to_cog manual__2025-06-10T20:59:16.077260+00:00 [queued]>
+[2025-06-10T21:01:55.332+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.convert_geotiff_to_cog manual__2025-06-10T20:59:16.077260+00:00 [queued]>
+[2025-06-10T21:01:55.332+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-06-10T21:01:55.339+0000] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): convert_geotiff_to_cog> on 2025-06-10 20:59:16.077260+00:00
+[2025-06-10T21:01:55.343+0000] {standard_task_runner.py:60} INFO - Started process 524 to run task
+[2025-06-10T21:01:55.346+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'sentinel_ndvi_processing_pipeline', 'convert_geotiff_to_cog', 'manual__2025-06-10T20:59:16.077260+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/process_sentinel_ndvi_dag.py', '--cfg-path', '/tmp/tmp0rt4f38w']
+[2025-06-10T21:01:55.346+0000] {standard_task_runner.py:88} INFO - Job 44: Subtask convert_geotiff_to_cog
+[2025-06-10T21:01:55.372+0000] {task_command.py:423} INFO - Running <TaskInstance: sentinel_ndvi_processing_pipeline.convert_geotiff_to_cog manual__2025-06-10T20:59:16.077260+00:00 [running]> on host 66a34d3b63c1
+[2025-06-10T21:01:55.420+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sentinel_ndvi_processing_pipeline' AIRFLOW_CTX_TASK_ID='convert_geotiff_to_cog' AIRFLOW_CTX_EXECUTION_DATE='2025-06-10T20:59:16.077260+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-10T20:59:16.077260+00:00'
+[2025-06-10T21:01:55.421+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-10T21:01:55.421+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/processing_output && python3 /opt/***/dags/pipeline_tasks/create_cog.py --- Script Finished with Errors ---']
+[2025-06-10T21:01:55.429+0000] {subprocess.py:86} INFO - Output:
+[2025-06-10T21:01:55.672+0000] {subprocess.py:93} INFO - usage: create_cog.py [-h] input_file
+[2025-06-10T21:01:55.672+0000] {subprocess.py:93} INFO - create_cog.py: error: unrecognized arguments: --- Finished with Errors ---
+[2025-06-10T21:01:55.702+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-06-10T21:01:55.708+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-06-10T21:01:55.710+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=sentinel_ndvi_processing_pipeline, task_id=convert_geotiff_to_cog, execution_date=20250610T205916, start_date=20250610T210155, end_date=20250610T210155
+[2025-06-10T21:01:55.721+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 44 for task convert_geotiff_to_cog (Bash command failed. The command returned a non-zero exit code 2.; 524)
+[2025-06-10T21:01:55.757+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-06-10T21:01:55.768+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

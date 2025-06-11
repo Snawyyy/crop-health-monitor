@@ -1,0 +1,208 @@
+# ───────────────────────────────────────────────────────────────
+# Airflow + Celery + CUDA + Postgres + Redis
+# place next to your Dockerfile
+# ───────────────────────────────────────────────────────────────
+
+# ── image build shared by all Airflow services ────────────────
+x-airflow-image: &airflow-image
+  build:
+    context: .
+    args:
+      AIRFLOW_UID: ${AIRFLOW_UID:-50000}
+      AIRFLOW_GID: ${AIRFLOW_GID:-0}
+  image: my-custom-airflow:2.8.2
+
+# ── common env + volumes ───────────────────────────────────────
+x-airflow-env: &airflow-env
+  AIRFLOW_UID: ${AIRFLOW_UID:-50000}
+  AIRFLOW_GID: ${AIRFLOW_GID:-0}
+
+  # CUDA paths so CuPy can find libcuda
+  LD_LIBRARY_PATH: /usr/local/cuda/lib64
+  CUDA_HOME: /usr/local/cuda
+  NVIDIA_VISIBLE_DEVICES: all
+  NVIDIA_DRIVER_CAPABILITIES: compute,utility
+
+  # Airflow config (CeleryExecutor)
+  AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+  AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+  AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/1
+  AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+  AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+  AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+  AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
+  AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
+
+x-airflow-vols: &airflow-vols
+  - ./dags:/opt/airflow/dags
+  - ./logs:/opt/airflow/logs
+  - ./plugins:/opt/airflow/plugins
+  - ./scripts:/opt/airflow/scripts
+  - ./processing_output:/opt/airflow/processing_output
+
+# ── infrastructure services ───────────────────────────────────
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    ports: ["5432:5432"]
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+  redis:
+    image: redis:6.2
+    expose: ["6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+# ── one-shot DB init & admin user creation ─────────────────────
+  airflow-init:
+    <<: *airflow-image
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        mkdir -p /opt/airflow/{logs,dags,plugins,processing_output}
+        chown -R "${AIRFLOW_UID}:0" /opt/airflow/{logs,dags,plugins,processing_output}
+        exec /entrypoint airflow db init
+    environment:
+      <<: *airflow-env
+      _AIRFLOW_DB_MIGRATE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-admin}
+      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-admin}
+    user: "0:0"
+    volumes: *airflow-vols
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis:    {condition: service_healthy}
+
+# ── Airflow webserver (CPU-only) ───────────────────────────────
+  airflow-webserver:
+    <<: *airflow-image
+    command: webserver
+    environment: *airflow-env
+    ports: ["8080:8080"]
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: always
+    volumes: *airflow-vols
+    depends_on:
+      airflow-init: {condition: service_completed_successfully}
+      postgres:     {condition: service_healthy}
+      redis:        {condition: service_healthy}
+
+# ── Airflow scheduler (GPU visible for local tasks) ────────────
+  airflow-scheduler:
+    <<: *airflow-image
+    command: scheduler
+    environment: *airflow-env
+    healthcheck:
+      test: ["CMD", "airflow", "jobs", "check", "--job-type", "SchedulerJob", "--hostname", "$${HOSTNAME}"]
+      interval: 30s
+      timeout: 30s
+      retries: 5
+    restart: always
+    volumes: *airflow-vols
+    depends_on:
+      airflow-init: {condition: service_completed_successfully}
+      postgres:     {condition: service_healthy}
+      redis:        {condition: service_healthy}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+# ── Celery worker (runs your CuPy tasks on GPU) ────────────────
+  airflow-worker:
+    <<: *airflow-image
+    command: celery worker
+    environment:
+      <<: *airflow-env
+      DUMB_INIT_SETSID: "0"
+    healthcheck:
+      test:
+        - "CMD-SHELL"
+        - 'celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}" || celery --app airflow.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
+      interval: 30s
+      timeout: 30s
+      retries: 5
+    restart: always
+    volumes: *airflow-vols
+    depends_on:
+      airflow-init: {condition: service_completed_successfully}
+      postgres:     {condition: service_healthy}
+      redis:        {condition: service_healthy}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+# ── Triggerer (rarely heavy, but keep parity) ──────────────────
+  airflow-triggerer:
+    <<: *airflow-image
+    command: triggerer
+    environment: *airflow-env
+    healthcheck:
+      test: ["CMD-SHELL", 'airflow jobs check --job-type TriggererJob --hostname "$${HOSTNAME}"']
+      interval: 30s
+      timeout: 30s
+      retries: 5
+    restart: always
+    volumes: *airflow-vols
+    depends_on:
+      airflow-init: {condition: service_completed_successfully}
+      postgres:     {condition: service_healthy}
+      redis:        {condition: service_healthy}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+# ── optional Flower dashboard (CPU-only) ───────────────────────
+  flower:
+    <<: *airflow-image
+    command: celery flower
+    profiles: [flower]
+    environment: *airflow-env
+    ports: ["5555:5555"]
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:5555/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: always
+    volumes: *airflow-vols
+    depends_on:
+      airflow-init: {condition: service_completed_successfully}
+      postgres:     {condition: service_healthy}
+      redis:        {condition: service_healthy}
+
+# ── named volume ───────────────────────────────────────────────
+volumes:
+  postgres-db-volume:

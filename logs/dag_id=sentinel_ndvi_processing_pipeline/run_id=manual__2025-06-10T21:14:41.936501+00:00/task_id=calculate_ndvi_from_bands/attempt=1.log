@@ -1,0 +1,36 @@
+[2025-06-10T21:14:46.688+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.calculate_ndvi_from_bands manual__2025-06-10T21:14:41.936501+00:00 [queued]>
+[2025-06-10T21:14:46.692+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.calculate_ndvi_from_bands manual__2025-06-10T21:14:41.936501+00:00 [queued]>
+[2025-06-10T21:14:46.693+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-06-10T21:14:46.699+0000] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): calculate_ndvi_from_bands> on 2025-06-10 21:14:41.936501+00:00
+[2025-06-10T21:14:46.702+0000] {standard_task_runner.py:60} INFO - Started process 70 to run task
+[2025-06-10T21:14:46.704+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'sentinel_ndvi_processing_pipeline', 'calculate_ndvi_from_bands', 'manual__2025-06-10T21:14:41.936501+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/process_sentinel_ndvi_dag.py', '--cfg-path', '/tmp/tmpp05h2x9i']
+[2025-06-10T21:14:46.704+0000] {standard_task_runner.py:88} INFO - Job 49: Subtask calculate_ndvi_from_bands
+[2025-06-10T21:14:46.727+0000] {task_command.py:423} INFO - Running <TaskInstance: sentinel_ndvi_processing_pipeline.calculate_ndvi_from_bands manual__2025-06-10T21:14:41.936501+00:00 [running]> on host 6eee7f84f229
+[2025-06-10T21:14:46.775+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sentinel_ndvi_processing_pipeline' AIRFLOW_CTX_TASK_ID='calculate_ndvi_from_bands' AIRFLOW_CTX_EXECUTION_DATE='2025-06-10T21:14:41.936501+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-10T21:14:41.936501+00:00'
+[2025-06-10T21:14:46.775+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-10T21:14:46.776+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/processing_output && python3 /opt/***/dags/pipeline_tasks/calculate_ndvi_from_bands.py S2A_36SXA_20250610_0_L2A_bands.json']
+[2025-06-10T21:14:46.781+0000] {subprocess.py:86} INFO - Output:
+[2025-06-10T21:17:04.620+0000] {subprocess.py:93} INFO - --- Starting NDVI calculation from input file: S2A_36SXA_20250610_0_L2A_bands.json ---
+[2025-06-10T21:17:04.620+0000] {subprocess.py:93} INFO - 
+[2025-06-10T21:17:04.620+0000] {subprocess.py:93} INFO - Attempting to open band:
+[2025-06-10T21:17:04.620+0000] {subprocess.py:93} INFO - https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2025/6/S2A_36SXA_20250610_0_L2A/B04.tif
+[2025-06-10T21:17:04.620+0000] {subprocess.py:93} INFO -   Successfully opened 'https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2025/6/S2A_36SXA_20250610_0_L2A/B04.tif'.
+[2025-06-10T21:17:04.620+0000] {subprocess.py:93} INFO - 
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - Attempting to open band:
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2025/6/S2A_36SXA_20250610_0_L2A/B08.tif
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO -   Successfully opened 'https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2025/6/S2A_36SXA_20250610_0_L2A/B08.tif'.
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - 
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - Transferring band data to GPU and calculating NDVI...
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO -   Data transferred to GPU.
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO -   NDVI calculation performed on GPU.
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO -   NDVI result transferred back to CPU.
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - 
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - Attempting to save NDVI array as GeoTIFF: ndvi_S2A_36SXA_20250610_0_L2A.tif
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - SUCCESS: NDVI GeoTIFF saved as ndvi_S2A_36SXA_20250610_0_L2A.tif
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - 
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - --- Script Finished Successfully ---
+[2025-06-10T21:17:04.621+0000] {subprocess.py:93} INFO - Output file: ndvi_S2A_36SXA_20250610_0_L2A.tif
+[2025-06-10T21:17:04.821+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-06-10T21:17:04.840+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=sentinel_ndvi_processing_pipeline, task_id=calculate_ndvi_from_bands, execution_date=20250610T211441, start_date=20250610T211446, end_date=20250610T211704
+[2025-06-10T21:17:04.874+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-10T21:17:04.885+0000] {taskinstance.py:3309} INFO - 1 downstream tasks scheduled from follow-on schedule check

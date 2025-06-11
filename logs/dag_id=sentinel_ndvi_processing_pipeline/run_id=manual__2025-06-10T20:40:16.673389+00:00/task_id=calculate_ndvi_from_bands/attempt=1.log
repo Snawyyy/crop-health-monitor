@@ -1,0 +1,28 @@
+[2025-06-10T20:40:20.954+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.calculate_ndvi_from_bands manual__2025-06-10T20:40:16.673389+00:00 [queued]>
+[2025-06-10T20:40:20.959+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.calculate_ndvi_from_bands manual__2025-06-10T20:40:16.673389+00:00 [queued]>
+[2025-06-10T20:40:20.959+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-06-10T20:40:20.965+0000] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): calculate_ndvi_from_bands> on 2025-06-10 20:40:16.673389+00:00
+[2025-06-10T20:40:20.968+0000] {standard_task_runner.py:60} INFO - Started process 70 to run task
+[2025-06-10T20:40:20.970+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'sentinel_ndvi_processing_pipeline', 'calculate_ndvi_from_bands', 'manual__2025-06-10T20:40:16.673389+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/process_sentinel_ndvi_dag.py', '--cfg-path', '/tmp/tmp6ujdae_c']
+[2025-06-10T20:40:20.971+0000] {standard_task_runner.py:88} INFO - Job 26: Subtask calculate_ndvi_from_bands
+[2025-06-10T20:40:20.996+0000] {task_command.py:423} INFO - Running <TaskInstance: sentinel_ndvi_processing_pipeline.calculate_ndvi_from_bands manual__2025-06-10T20:40:16.673389+00:00 [running]> on host 66a34d3b63c1
+[2025-06-10T20:40:21.038+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sentinel_ndvi_processing_pipeline' AIRFLOW_CTX_TASK_ID='calculate_ndvi_from_bands' AIRFLOW_CTX_EXECUTION_DATE='2025-06-10T20:40:16.673389+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-10T20:40:16.673389+00:00'
+[2025-06-10T20:40:21.038+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-10T20:40:21.039+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/processing_output && python3 /opt/***/dags/pipeline_tasks/calculate_ndvi_from_bands.py --- Script Finished ---']
+[2025-06-10T20:40:21.045+0000] {subprocess.py:86} INFO - Output:
+[2025-06-10T20:40:21.581+0000] {subprocess.py:93} INFO - usage: calculate_ndvi_from_bands.py [-h] input_json
+[2025-06-10T20:40:21.581+0000] {subprocess.py:93} INFO - calculate_ndvi_from_bands.py: error: unrecognized arguments: --- Finished ---
+[2025-06-10T20:40:21.621+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-06-10T20:40:21.626+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-06-10T20:40:21.628+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=sentinel_ndvi_processing_pipeline, task_id=calculate_ndvi_from_bands, execution_date=20250610T204016, start_date=20250610T204020, end_date=20250610T204021
+[2025-06-10T20:40:21.639+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 26 for task calculate_ndvi_from_bands (Bash command failed. The command returned a non-zero exit code 2.; 70)
+[2025-06-10T20:40:21.662+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-06-10T20:40:21.675+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

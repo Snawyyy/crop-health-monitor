@@ -1,0 +1,434 @@
+[2025-06-11T16:51:15.111+0000] {processor.py:161} INFO - Started process (PID=37) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:51:15.111+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:51:15.112+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:51:15.112+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:51:15.131+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:51:15.144+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:51:15.144+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:51:15.156+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:51:15.156+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:51:15.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.064 seconds
+[2025-06-11T16:51:45.205+0000] {processor.py:161} INFO - Started process (PID=44) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:51:45.206+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:51:45.208+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:51:45.207+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:51:45.212+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:51:45.363+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:51:45.363+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:51:45.368+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:51:45.368+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:51:45.378+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.175 seconds
+[2025-06-11T16:52:15.452+0000] {processor.py:161} INFO - Started process (PID=51) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:52:15.453+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:52:15.455+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:52:15.455+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:52:15.460+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:52:15.479+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:52:15.479+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:52:15.487+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:52:15.487+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:52:15.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.054 seconds
+[2025-06-11T16:52:45.521+0000] {processor.py:161} INFO - Started process (PID=58) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:52:45.523+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:52:45.524+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:52:45.523+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:52:45.530+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:52:45.547+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:52:45.546+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:52:45.553+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:52:45.553+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:52:45.569+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.050 seconds
+[2025-06-11T16:53:15.650+0000] {processor.py:161} INFO - Started process (PID=65) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:53:15.652+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:53:15.653+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:53:15.653+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:53:15.661+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:53:15.675+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:53:15.675+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:53:15.682+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:53:15.682+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:53:15.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.049 seconds
+[2025-06-11T16:53:45.726+0000] {processor.py:161} INFO - Started process (PID=72) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:53:45.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:53:45.729+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:53:45.729+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:53:45.734+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:53:45.749+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:53:45.748+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:53:45.755+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:53:45.755+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:53:45.772+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.048 seconds
+[2025-06-11T16:54:15.849+0000] {processor.py:161} INFO - Started process (PID=79) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:54:15.851+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:54:15.852+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:54:15.852+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:54:15.857+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:54:15.876+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:54:15.876+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:54:15.884+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:54:15.884+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:54:15.900+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.053 seconds
+[2025-06-11T16:54:45.937+0000] {processor.py:161} INFO - Started process (PID=86) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:54:45.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:54:45.939+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:54:45.939+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:54:45.944+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:54:45.962+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:54:45.962+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:54:45.973+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:54:45.972+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:54:45.989+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.053 seconds
+[2025-06-11T16:55:16.054+0000] {processor.py:161} INFO - Started process (PID=93) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:55:16.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:55:16.057+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:55:16.057+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:55:16.063+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:55:16.080+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:55:16.080+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:55:16.088+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:55:16.088+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:55:16.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.055 seconds
+[2025-06-11T16:55:46.136+0000] {processor.py:161} INFO - Started process (PID=94) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:55:46.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:55:46.139+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:55:46.138+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:55:46.143+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:55:46.158+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:55:46.158+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:55:46.165+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:55:46.165+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:55:46.183+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.049 seconds
+[2025-06-11T16:56:16.267+0000] {processor.py:161} INFO - Started process (PID=101) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:56:16.681+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:56:16.682+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:56:16.682+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:56:16.688+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:56:16.705+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:56:16.704+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:56:16.711+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:56:16.711+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:56:16.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.462 seconds
+[2025-06-11T16:56:46.807+0000] {processor.py:161} INFO - Started process (PID=108) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:56:46.807+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:56:46.809+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:56:46.808+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:56:46.815+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:56:46.831+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:56:46.830+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:56:46.838+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:56:46.838+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:56:46.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.050 seconds
+[2025-06-11T16:57:16.883+0000] {processor.py:161} INFO - Started process (PID=115) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:57:16.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:57:16.885+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:57:16.884+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:57:16.891+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:57:16.906+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:57:16.905+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:57:16.914+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:57:16.913+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:57:16.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.051 seconds
+[2025-06-11T16:57:47.005+0000] {processor.py:161} INFO - Started process (PID=122) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:57:47.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:57:47.007+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:57:47.006+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:57:47.012+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:57:47.028+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:57:47.028+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:57:47.034+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:57:47.034+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:57:47.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.047 seconds
+[2025-06-11T16:58:17.083+0000] {processor.py:161} INFO - Started process (PID=129) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:58:17.085+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:58:17.086+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:58:17.085+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:58:17.091+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:58:17.109+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:58:17.109+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:58:17.116+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:58:17.116+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:58:17.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.052 seconds
+[2025-06-11T16:58:47.195+0000] {processor.py:161} INFO - Started process (PID=136) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:58:47.196+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:58:47.197+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:58:47.196+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:58:47.202+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:58:47.216+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:58:47.216+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:58:47.223+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:58:47.223+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:58:47.241+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.048 seconds
+[2025-06-11T16:59:17.290+0000] {processor.py:161} INFO - Started process (PID=143) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:59:17.291+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:59:17.292+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:59:17.292+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:59:17.297+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:59:17.311+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:59:17.311+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:59:17.318+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:59:17.318+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:59:17.333+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.045 seconds
+[2025-06-11T16:59:47.395+0000] {processor.py:161} INFO - Started process (PID=150) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:59:47.395+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T16:59:47.396+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:59:47.396+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:59:47.403+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T16:59:47.419+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:59:47.419+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T16:59:47.430+0000] {logging_mixin.py:188} INFO - [2025-06-11T16:59:47.430+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T16:59:47.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.052 seconds
+[2025-06-11T17:00:17.488+0000] {processor.py:161} INFO - Started process (PID=157) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:00:17.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:00:17.490+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:00:17.490+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:00:17.496+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:00:17.515+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:00:17.515+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:00:17.522+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:00:17.521+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:00:17.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.055 seconds
+[2025-06-11T17:00:47.586+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:00:47.586+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:00:47.588+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:00:47.588+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:00:47.595+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:00:47.611+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:00:47.611+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:00:47.617+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:00:47.617+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:00:47.633+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.049 seconds
+[2025-06-11T17:01:17.686+0000] {processor.py:161} INFO - Started process (PID=171) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:01:17.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:01:17.689+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:01:17.688+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:01:17.693+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:01:17.707+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:01:17.707+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:01:17.714+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:01:17.714+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:01:17.730+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.046 seconds
+[2025-06-11T17:01:47.774+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:01:47.774+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:01:47.775+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:01:47.775+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:01:47.780+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:01:47.797+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:01:47.797+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:01:47.805+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:01:47.805+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:01:47.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.050 seconds
+[2025-06-11T17:02:17.871+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:02:17.872+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:02:17.873+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:02:17.873+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:02:17.878+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:02:17.892+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:02:17.892+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:02:17.899+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:02:17.899+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:02:17.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.052 seconds
+[2025-06-11T17:02:47.966+0000] {processor.py:161} INFO - Started process (PID=192) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:02:47.967+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:02:47.968+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:02:47.968+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:02:47.973+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:02:47.988+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:02:47.987+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:02:47.995+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:02:47.994+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:02:48.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.046 seconds
+[2025-06-11T17:03:18.066+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:03:18.068+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:03:18.069+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:03:18.069+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:03:18.074+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:03:18.088+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:03:18.088+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:03:18.095+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:03:18.095+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:03:18.104+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.040 seconds
+[2025-06-11T17:03:48.151+0000] {processor.py:161} INFO - Started process (PID=206) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:03:48.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:03:48.152+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:03:48.152+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:03:48.157+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:03:48.171+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:03:48.171+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:03:48.177+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:03:48.177+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:03:48.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.043 seconds
+[2025-06-11T17:04:18.250+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:04:18.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:04:18.253+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:04:18.253+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:04:18.260+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:04:18.276+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:04:18.276+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:04:18.282+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:04:18.282+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:04:18.297+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.049 seconds
+[2025-06-11T17:04:48.329+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:04:48.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:04:48.330+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:04:48.330+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:04:48.335+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:04:48.350+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:04:48.349+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:04:48.357+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:04:48.357+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:04:48.378+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.050 seconds
+[2025-06-11T17:05:18.435+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:05:18.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:05:18.801+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:05:18.801+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:05:18.807+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:05:18.823+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:05:18.823+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:05:18.831+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:05:18.830+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:05:18.846+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.414 seconds
+[2025-06-11T17:05:48.933+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:05:48.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:05:48.935+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:05:48.935+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:05:48.940+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:05:48.955+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:05:48.955+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:05:48.963+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:05:48.963+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:05:48.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.049 seconds
+[2025-06-11T17:06:19.013+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:06:19.013+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:06:19.014+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:06:19.014+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:06:19.019+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:06:19.035+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:06:19.034+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:06:19.041+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:06:19.040+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:06:19.056+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.045 seconds
+[2025-06-11T17:06:49.121+0000] {processor.py:161} INFO - Started process (PID=248) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:06:49.123+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:06:49.124+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:06:49.124+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:06:49.128+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:06:49.141+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:06:49.141+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:06:49.147+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:06:49.147+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:06:49.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.043 seconds
+[2025-06-11T17:07:19.197+0000] {processor.py:161} INFO - Started process (PID=255) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:07:19.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:07:19.198+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:07:19.198+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:07:19.204+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:07:19.224+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:07:19.224+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:07:19.233+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:07:19.232+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:07:19.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.058 seconds
+[2025-06-11T17:07:49.301+0000] {processor.py:161} INFO - Started process (PID=256) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:07:49.301+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:07:49.302+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:07:49.302+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:07:49.307+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:07:49.323+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:07:49.323+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:07:49.331+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:07:49.331+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:07:49.349+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.050 seconds
+[2025-06-11T17:08:19.393+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:08:19.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:08:19.394+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:08:19.394+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:08:19.400+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:08:19.415+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:08:19.415+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:08:19.425+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:08:19.425+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:08:19.443+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.053 seconds
+[2025-06-11T17:08:49.500+0000] {processor.py:161} INFO - Started process (PID=270) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:08:49.502+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:08:49.503+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:08:49.503+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:08:49.512+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:08:49.531+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:08:49.531+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:08:49.538+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:08:49.538+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:08:49.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.051 seconds
+[2025-06-11T17:09:19.589+0000] {processor.py:161} INFO - Started process (PID=277) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:09:19.589+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:09:19.590+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:09:19.590+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:09:19.597+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:09:19.611+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:09:19.610+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:09:19.617+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:09:19.617+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:09:19.627+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.040 seconds
+[2025-06-11T17:09:49.696+0000] {processor.py:161} INFO - Started process (PID=284) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:09:49.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:09:49.697+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:09:49.697+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:09:49.702+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:09:49.716+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:09:49.716+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:09:49.722+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:09:49.722+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:09:49.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.038 seconds
+[2025-06-11T17:10:19.778+0000] {processor.py:161} INFO - Started process (PID=291) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:10:19.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:10:19.781+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:10:19.781+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:10:19.786+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:10:19.799+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:10:19.798+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:10:19.805+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:10:19.805+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:10:19.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.039 seconds
+[2025-06-11T17:10:49.874+0000] {processor.py:161} INFO - Started process (PID=298) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:10:49.874+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:10:49.875+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:10:49.875+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:10:49.880+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:10:49.894+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:10:49.893+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:10:49.901+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:10:49.901+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:10:49.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.040 seconds
+[2025-06-11T17:11:19.958+0000] {processor.py:161} INFO - Started process (PID=305) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:11:20.364+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:11:20.365+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:11:20.365+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:11:20.370+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:11:20.385+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:11:20.384+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:11:20.391+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:11:20.391+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:11:20.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.452 seconds
+[2025-06-11T17:11:50.484+0000] {processor.py:161} INFO - Started process (PID=312) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:11:50.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:11:50.486+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:11:50.486+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:11:50.491+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:11:50.504+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:11:50.504+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:11:50.512+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:11:50.511+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:11:50.527+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.044 seconds
+[2025-06-11T17:12:20.564+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:12:20.564+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:12:20.565+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:12:20.565+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:12:20.570+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:12:20.589+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:12:20.589+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:12:20.596+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:12:20.596+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:12:20.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.052 seconds
+[2025-06-11T17:12:50.660+0000] {processor.py:161} INFO - Started process (PID=326) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:12:50.660+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:12:50.661+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:12:50.661+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:12:50.666+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:12:50.684+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:12:50.683+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:12:50.690+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:12:50.690+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:12:50.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.049 seconds
+[2025-06-11T17:13:20.756+0000] {processor.py:161} INFO - Started process (PID=333) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:13:20.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:13:20.759+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:13:20.759+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:13:20.764+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:13:20.778+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:13:20.778+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:13:20.785+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:13:20.785+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:13:20.802+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.047 seconds
+[2025-06-11T17:13:50.862+0000] {processor.py:161} INFO - Started process (PID=340) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:13:50.862+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:13:50.864+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:13:50.863+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:13:50.871+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:13:50.886+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:13:50.885+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:13:50.893+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:13:50.893+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:13:50.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.051 seconds
+[2025-06-11T17:14:20.950+0000] {processor.py:161} INFO - Started process (PID=347) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:14:20.951+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:14:20.952+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:14:20.952+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:14:20.956+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:14:20.971+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:14:20.971+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:14:20.977+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:14:20.977+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:14:20.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.045 seconds
+[2025-06-11T17:14:51.048+0000] {processor.py:161} INFO - Started process (PID=354) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:14:51.048+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:14:51.050+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:14:51.049+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:14:51.054+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:14:51.070+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:14:51.070+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:14:51.076+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:14:51.076+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:14:51.093+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.047 seconds
+[2025-06-11T17:15:21.139+0000] {processor.py:161} INFO - Started process (PID=361) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:15:21.141+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:15:21.142+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:15:21.141+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:15:21.147+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:15:21.163+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:15:21.163+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:15:21.169+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:15:21.169+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:15:21.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.047 seconds
+[2025-06-11T17:15:51.238+0000] {processor.py:161} INFO - Started process (PID=368) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:15:51.238+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:15:51.240+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:15:51.239+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:15:51.246+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:15:51.261+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:15:51.261+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:15:51.267+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:15:51.267+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:15:51.284+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.048 seconds
+[2025-06-11T17:16:21.326+0000] {processor.py:161} INFO - Started process (PID=375) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:16:21.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:16:21.329+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:16:21.329+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:16:21.335+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:16:21.348+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:16:21.348+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:16:21.356+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:16:21.356+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:16:21.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.048 seconds
+[2025-06-11T17:16:51.419+0000] {processor.py:161} INFO - Started process (PID=382) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:16:51.419+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:16:51.420+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:16:51.420+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:16:51.426+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:16:51.439+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:16:51.439+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:16:51.446+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:16:51.446+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:16:51.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.045 seconds
+[2025-06-11T17:17:21.510+0000] {processor.py:161} INFO - Started process (PID=389) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:17:21.512+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:17:21.513+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:17:21.512+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:17:21.518+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:17:21.537+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:17:21.536+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:17:21.543+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:17:21.543+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:17:21.561+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.053 seconds
+[2025-06-11T17:17:51.594+0000] {processor.py:161} INFO - Started process (PID=396) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:17:51.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:17:51.595+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:17:51.595+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:17:51.600+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:17:51.616+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:17:51.616+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:17:51.623+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:17:51.623+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:17:51.638+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.046 seconds
+[2025-06-11T17:18:21.707+0000] {processor.py:161} INFO - Started process (PID=403) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:18:21.708+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:18:21.709+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:18:21.709+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:18:21.714+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:18:21.731+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:18:21.730+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:18:21.737+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:18:21.737+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:18:21.752+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.046 seconds
+[2025-06-11T17:18:51.781+0000] {processor.py:161} INFO - Started process (PID=410) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:18:51.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:18:51.782+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:18:51.782+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:18:51.787+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:18:51.803+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:18:51.802+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:18:51.809+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:18:51.808+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:18:51.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.045 seconds
+[2025-06-11T17:19:21.896+0000] {processor.py:161} INFO - Started process (PID=417) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:19:21.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:19:21.899+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:19:21.899+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:19:21.906+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:19:21.920+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:19:21.920+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:19:21.930+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:19:21.930+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:19:21.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.053 seconds
+[2025-06-11T17:19:51.970+0000] {processor.py:161} INFO - Started process (PID=424) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:19:51.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:19:51.971+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:19:51.971+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:19:51.977+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:19:51.991+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:19:51.991+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:19:51.999+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:19:51.999+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:19:52.015+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.046 seconds
+[2025-06-11T17:20:22.088+0000] {processor.py:161} INFO - Started process (PID=425) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:20:22.089+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:20:22.089+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:20:22.089+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:20:22.094+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:20:22.110+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:20:22.109+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:20:22.116+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:20:22.116+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:20:22.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.045 seconds
+[2025-06-11T17:20:52.183+0000] {processor.py:161} INFO - Started process (PID=432) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:20:52.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:20:52.185+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:20:52.184+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:20:52.190+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:20:52.206+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:20:52.205+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:20:52.212+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:20:52.212+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:20:52.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.047 seconds
+[2025-06-11T17:21:22.279+0000] {processor.py:161} INFO - Started process (PID=439) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:21:22.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:21:22.282+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:21:22.282+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:21:22.288+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:21:22.303+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:21:22.303+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:21:22.310+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:21:22.310+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:21:22.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.049 seconds
+[2025-06-11T17:21:52.369+0000] {processor.py:161} INFO - Started process (PID=446) to work on /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:21:52.370+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_sentinel_ndvi_dag.py for tasks to queue
+[2025-06-11T17:21:52.371+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:21:52.371+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:21:52.376+0000] {processor.py:840} INFO - DAG(s) 'sentinel_ndvi_processing_pipeline' retrieved from /opt/airflow/dags/process_sentinel_ndvi_dag.py
+[2025-06-11T17:21:52.391+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:21:52.391+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-06-11T17:21:52.397+0000] {logging_mixin.py:188} INFO - [2025-06-11T17:21:52.397+0000] {dag.py:3834} INFO - Setting next_dagrun for sentinel_ndvi_processing_pipeline to None, run_after=None
+[2025-06-11T17:21:52.414+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_sentinel_ndvi_dag.py took 0.047 seconds

@@ -1,0 +1,30 @@
+[2025-06-10T20:29:22.147+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.find_latest_sentinel_data manual__2025-06-10T20:29:20.960376+00:00 [queued]>
+[2025-06-10T20:29:22.153+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.find_latest_sentinel_data manual__2025-06-10T20:29:20.960376+00:00 [queued]>
+[2025-06-10T20:29:22.153+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-06-10T20:29:22.159+0000] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): find_latest_sentinel_data> on 2025-06-10 20:29:20.960376+00:00
+[2025-06-10T20:29:22.161+0000] {standard_task_runner.py:60} INFO - Started process 60 to run task
+[2025-06-10T20:29:22.163+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'sentinel_ndvi_processing_pipeline', 'find_latest_sentinel_data', 'manual__2025-06-10T20:29:20.960376+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/process_sentinel_ndvi_dag.py', '--cfg-path', '/tmp/tmpaj_tg4ex']
+[2025-06-10T20:29:22.164+0000] {standard_task_runner.py:88} INFO - Job 4: Subtask find_latest_sentinel_data
+[2025-06-10T20:29:22.190+0000] {task_command.py:423} INFO - Running <TaskInstance: sentinel_ndvi_processing_pipeline.find_latest_sentinel_data manual__2025-06-10T20:29:20.960376+00:00 [running]> on host 6a6f6a04d71b
+[2025-06-10T20:29:22.229+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sentinel_ndvi_processing_pipeline' AIRFLOW_CTX_TASK_ID='find_latest_sentinel_data' AIRFLOW_CTX_EXECUTION_DATE='2025-06-10T20:29:20.960376+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-10T20:29:20.960376+00:00'
+[2025-06-10T20:29:22.230+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-10T20:29:22.230+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/processing_output && python3 /opt/***/dags/pipeline_tasks/get_latest_sentinel_data.py']
+[2025-06-10T20:29:22.237+0000] {subprocess.py:86} INFO - Output:
+[2025-06-10T20:29:22.255+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-06-10T20:29:22.255+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/pipeline_tasks/get_latest_sentinel_data.py", line 4, in <module>
+[2025-06-10T20:29:22.255+0000] {subprocess.py:93} INFO -     from pystac_client import Client
+[2025-06-10T20:29:22.255+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'pystac_client'
+[2025-06-10T20:29:22.257+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-06-10T20:29:22.264+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-06-10T20:29:22.266+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=sentinel_ndvi_processing_pipeline, task_id=find_latest_sentinel_data, execution_date=20250610T202920, start_date=20250610T202922, end_date=20250610T202922
+[2025-06-10T20:29:22.272+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 4 for task find_latest_sentinel_data (Bash command failed. The command returned a non-zero exit code 1.; 60)
+[2025-06-10T20:29:22.294+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-06-10T20:29:22.308+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

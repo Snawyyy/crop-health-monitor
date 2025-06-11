@@ -1,0 +1,56 @@
+[2025-06-07T19:26:19.552+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.calculate_ndvi_from_bands manual__2025-06-07T19:26:14.950122+00:00 [queued]>
+[2025-06-07T19:26:19.556+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.calculate_ndvi_from_bands manual__2025-06-07T19:26:14.950122+00:00 [queued]>
+[2025-06-07T19:26:19.556+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-06-07T19:26:19.563+0000] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): calculate_ndvi_from_bands> on 2025-06-07 19:26:14.950122+00:00
+[2025-06-07T19:26:19.566+0000] {standard_task_runner.py:60} INFO - Started process 67 to run task
+[2025-06-07T19:26:19.567+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'sentinel_ndvi_processing_pipeline', 'calculate_ndvi_from_bands', 'manual__2025-06-07T19:26:14.950122+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/process_sentinel_ndvi_dag.py', '--cfg-path', '/tmp/tmpoq_yv2gd']
+[2025-06-07T19:26:19.568+0000] {standard_task_runner.py:88} INFO - Job 4: Subtask calculate_ndvi_from_bands
+[2025-06-07T19:26:19.594+0000] {task_command.py:423} INFO - Running <TaskInstance: sentinel_ndvi_processing_pipeline.calculate_ndvi_from_bands manual__2025-06-07T19:26:14.950122+00:00 [running]> on host 193435afb691
+[2025-06-07T19:26:19.638+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sentinel_ndvi_processing_pipeline' AIRFLOW_CTX_TASK_ID='calculate_ndvi_from_bands' AIRFLOW_CTX_EXECUTION_DATE='2025-06-07T19:26:14.950122+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-07T19:26:14.950122+00:00'
+[2025-06-07T19:26:19.639+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-07T19:26:19.639+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/processing_output && python3 /opt/***/dags/pipeline_tasks/calculate_ndvi_from_bands.py --- Script Finished ---']
+[2025-06-07T19:26:19.647+0000] {subprocess.py:86} INFO - Output:
+[2025-06-07T19:26:20.015+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-06-07T19:26:20.015+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/cupy/__init__.py", line 17, in <module>
+[2025-06-07T19:26:20.015+0000] {subprocess.py:93} INFO -     from cupy import _core  # NOQA
+[2025-06-07T19:26:20.015+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/cupy/_core/__init__.py", line 3, in <module>
+[2025-06-07T19:26:20.015+0000] {subprocess.py:93} INFO -     from cupy._core import core  # NOQA
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - ImportError: libcudart.so.12: cannot open shared object file: No such file or directory
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - 
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - The above exception was the direct cause of the following exception:
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - 
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/pipeline_tasks/calculate_ndvi_from_bands.py", line 7, in <module>
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO -     import cupy as cp
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/cupy/__init__.py", line 19, in <module>
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO -     raise ImportError(f'''
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - ImportError:
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - ================================================================
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - Failed to import CuPy.
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - 
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - If you installed CuPy via wheels (cupy-cudaXXX or cupy-rocm-X-X), make sure that the package matches with the version of CUDA or ROCm installed.
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - 
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - On Linux, you may need to set LD_LIBRARY_PATH environment variable depending on how you installed CUDA/ROCm.
+[2025-06-07T19:26:20.016+0000] {subprocess.py:93} INFO - On Windows, try setting CUDA_PATH environment variable.
+[2025-06-07T19:26:20.017+0000] {subprocess.py:93} INFO - 
+[2025-06-07T19:26:20.017+0000] {subprocess.py:93} INFO - Check the Installation Guide for details:
+[2025-06-07T19:26:20.017+0000] {subprocess.py:93} INFO -   https://docs.cupy.dev/en/latest/install.html
+[2025-06-07T19:26:20.017+0000] {subprocess.py:93} INFO - 
+[2025-06-07T19:26:20.017+0000] {subprocess.py:93} INFO - Original error:
+[2025-06-07T19:26:20.017+0000] {subprocess.py:93} INFO -   ImportError: libcudart.so.12: cannot open shared object file: No such file or directory
+[2025-06-07T19:26:20.017+0000] {subprocess.py:93} INFO - ================================================================
+[2025-06-07T19:26:20.017+0000] {subprocess.py:93} INFO - 
+[2025-06-07T19:26:20.042+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-06-07T19:26:20.047+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-06-07T19:26:20.049+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=sentinel_ndvi_processing_pipeline, task_id=calculate_ndvi_from_bands, execution_date=20250607T192614, start_date=20250607T192619, end_date=20250607T192620
+[2025-06-07T19:26:20.060+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 4 for task calculate_ndvi_from_bands (Bash command failed. The command returned a non-zero exit code 1.; 67)
+[2025-06-07T19:26:20.100+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-06-07T19:26:20.112+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

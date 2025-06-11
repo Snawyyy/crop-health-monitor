@@ -1,0 +1,32 @@
+[2025-06-10T21:14:43.567+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.find_latest_sentinel_data manual__2025-06-10T21:14:41.936501+00:00 [queued]>
+[2025-06-10T21:14:43.571+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sentinel_ndvi_processing_pipeline.find_latest_sentinel_data manual__2025-06-10T21:14:41.936501+00:00 [queued]>
+[2025-06-10T21:14:43.571+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-06-10T21:14:43.578+0000] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): find_latest_sentinel_data> on 2025-06-10 21:14:41.936501+00:00
+[2025-06-10T21:14:43.581+0000] {standard_task_runner.py:60} INFO - Started process 67 to run task
+[2025-06-10T21:14:43.582+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'sentinel_ndvi_processing_pipeline', 'find_latest_sentinel_data', 'manual__2025-06-10T21:14:41.936501+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/process_sentinel_ndvi_dag.py', '--cfg-path', '/tmp/tmpshz6qnnj']
+[2025-06-10T21:14:43.583+0000] {standard_task_runner.py:88} INFO - Job 48: Subtask find_latest_sentinel_data
+[2025-06-10T21:14:43.608+0000] {task_command.py:423} INFO - Running <TaskInstance: sentinel_ndvi_processing_pipeline.find_latest_sentinel_data manual__2025-06-10T21:14:41.936501+00:00 [running]> on host 6eee7f84f229
+[2025-06-10T21:14:43.643+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sentinel_ndvi_processing_pipeline' AIRFLOW_CTX_TASK_ID='find_latest_sentinel_data' AIRFLOW_CTX_EXECUTION_DATE='2025-06-10T21:14:41.936501+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-10T21:14:41.936501+00:00'
+[2025-06-10T21:14:43.643+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-10T21:14:43.644+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/processing_output && python3 /opt/***/dags/pipeline_tasks/get_latest_sentinel_data.py']
+[2025-06-10T21:14:43.650+0000] {subprocess.py:86} INFO - Output:
+[2025-06-10T21:14:46.425+0000] {subprocess.py:93} INFO - Connected to: Earth Search by Element 84
+[2025-06-10T21:14:46.425+0000] {subprocess.py:93} INFO - --- Starting data discovery for AOI: Ashdod ---
+[2025-06-10T21:14:46.425+0000] {subprocess.py:93} INFO - 
+[2025-06-10T21:14:46.425+0000] {subprocess.py:93} INFO - Searching for items in date range: 2025-05-11T21:14:44.611742+00:00/2025-06-10T21:14:44.611742+00:00
+[2025-06-10T21:14:46.425+0000] {subprocess.py:93} INFO - Found 8 items in the date range.
+[2025-06-10T21:14:46.425+0000] {subprocess.py:93} INFO - 
+[2025-06-10T21:14:46.425+0000] {subprocess.py:93} INFO - Processing Item ID: S2A_36SXA_20250610_0_L2A
+[2025-06-10T21:14:46.426+0000] {subprocess.py:93} INFO - Acquired on: 2025-06-10 08:31:32.878000+00:00
+[2025-06-10T21:14:46.426+0000] {subprocess.py:93} INFO - Found Red band asset URL:
+[2025-06-10T21:14:46.426+0000] {subprocess.py:93} INFO - https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2025/6/S2A_36SXA_20250610_0_L2A/B04.tif
+[2025-06-10T21:14:46.426+0000] {subprocess.py:93} INFO - Found NIR band asset URL:
+[2025-06-10T21:14:46.426+0000] {subprocess.py:93} INFO - https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2025/6/S2A_36SXA_20250610_0_L2A/B08.tif
+[2025-06-10T21:14:46.426+0000] {subprocess.py:93} INFO - Found SCL (cloud mask) asset URL:
+[2025-06-10T21:14:46.426+0000] {subprocess.py:93} INFO - https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2025/6/S2A_36SXA_20250610_0_L2A/SCL.tif
+[2025-06-10T21:14:46.426+0000] {subprocess.py:93} INFO - SUCCESS: Band URLs saved to S2A_36SXA_20250610_0_L2A_bands.json
+[2025-06-10T21:14:46.426+0000] {subprocess.py:93} INFO - S2A_36SXA_20250610_0_L2A_bands.json
+[2025-06-10T21:14:46.443+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-06-10T21:14:46.464+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=sentinel_ndvi_processing_pipeline, task_id=find_latest_sentinel_data, execution_date=20250610T211441, start_date=20250610T211443, end_date=20250610T211446
+[2025-06-10T21:14:46.480+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-10T21:14:46.494+0000] {taskinstance.py:3309} INFO - 1 downstream tasks scheduled from follow-on schedule check
